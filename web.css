@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive, sans-serif;
+  background: linear-gradient(135deg, #fce38a, #f38181);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-container {
+  background: #fff8dc;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  border: 5px dashed #ffb347;
+  margin: 20px;
+}
+.login-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff69b4;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ffa07a;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #ff69b4;
+  background-color: #fff0f5;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #48d1cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #20b2aa;
+}
+
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 25px 20px;
+    border-width: 3px;
+  }
+
+  .login-container h1 {
+    font-size: 22px;
+  }
+
+  form input,
+  button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+  background-color: #ffe6e6;
+  color: #3b3b98;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  border-top: 5px solid #fcb69f;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.footer-icons {
+  margin: 10px 0;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 0 12px;
+  color: #3b3b98;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.4);
+  color: #ff6f61;
+}

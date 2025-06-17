@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: linear-gradient(135deg, #ffefd5, #ffc1cc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.checkout-container {
+  background: #fff8f0;
+  border-radius: 25px;
+  padding: 30px 40px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(255, 150, 170, 0.3);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 0.8s forwards;
+}
+
+h2 {
+  color: #f75454;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #f7bcbc;
+}
+
+p {
+  color: #c75c5c;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.payment-details p {
+  font-weight: 700;
+  color: #f96363;
+  font-size: 1.15rem;
+  margin: 8px 0;
+  border-radius: 10px;
+  background: #ffd6d6;
+  padding: 8px 15px;
+  box-shadow: inset 0 3px 6px rgba(255, 0, 0, 0.1);
+}
+
+button {
+  background: #f75454;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(247, 84, 84, 0.5);
+  margin-top: 20px;
+  user-select: none;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #f96767;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(249, 103, 103, 0.7);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 25px 20px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+  }
+}
